@@ -44,7 +44,26 @@ h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 4
 
 footer { text-align: center; padding: 28px 24px; font-size: 13px; color: #363636; background: #f5f5f5; }
 
-/* Inner pages (Austin Film Festival, The Team, Contact) */
+/* Austin Film Festival page */
+.page-band { background: #1c1c1c; height: 540px; display: flex; align-items: center; justify-content: center; }
+.page-band h2 { color: #ffffff; margin: 0; font-size: 48px; font-weight: 300; letter-spacing: 0.25em; }
+.aff-intro { max-width: 960px; margin: 0 auto; padding: 90px 24px 40px; text-align: center; }
+.aff-intro .laurel { width: 360px; max-width: 80%; display: block; margin: 0 auto 40px; }
+.aff-intro h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 40px; color: #1c1c1c; margin: 0 0 30px; }
+.aff-intro p { font-size: 20px; line-height: 1.7; color: #2b2b2b; margin: 0; }
+.screening-block { max-width: 1100px; margin: 0 auto; padding: 90px 24px 40px; display: grid; grid-template-columns: 360px 1fr; gap: 80px; align-items: start; }
+.screening-poster { width: 100%; display: block; }
+.screening-info h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 24px; letter-spacing: 0.2em; text-transform: uppercase; color: #1c1c1c; margin: 0 0 30px; }
+.screening-info p { font-size: 20px; line-height: 1.7; color: #2b2b2b; margin: 0 0 1.4rem; }
+.learn-more { display: inline-block; margin-top: 30px; padding: 20px 44px; border: 3px solid #1c1c1c; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; letter-spacing: 0.2em; text-transform: uppercase; color: #1c1c1c; text-decoration: none; }
+.learn-more:hover { background: #1c1c1c; color: #ffffff; }
+@media (max-width: 900px) {
+  .screening-block { grid-template-columns: 1fr; gap: 40px; }
+  .screening-poster { max-width: 360px; }
+  .page-band h2 { font-size: 30px; }
+}
+
+/* Inner pages (The Team, Contact) */
 main { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
 .team-member { margin-bottom: 2rem; text-align: center; }
 .team-member h3 { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #1c1c1c; }
