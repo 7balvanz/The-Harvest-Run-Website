@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: #17130d; color: #f2e9d8; line-height: 1.6; }
+a { color: #e2b45a; }
+header { padding: 28px 24px 12px; text-align: center; border-bottom: 1px solid #3a3022; }
+header h1 { margin: 0; font-size: 2.2rem; letter-spacing: 0.08em; font-weight: normal; text-transform: uppercase; }
+header h1 a { color: #f2e9d8; text-decoration: none; }
+nav { margin-top: 12px; }
+nav a { color: #f2e9d8; text-decoration: none; margin: 0 14px; font-size: 0.95rem; letter-spacing: 0.04em; }
+nav a.active, nav a:hover { color: #e2b45a; }
+main { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+h2 { font-weight: normal; font-size: 1.6rem; color: #e2b45a; margin-top: 2.2rem; }
+.tagline { font-size: 1.3rem; font-style: italic; text-align: center; margin: 0 0 1.5rem; }
+.credit { text-align: center; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.9rem; color: #bda985; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 16px; }
+.gallery img { width: 100%; display: block; border: 1px solid #3a3022; }
+.team-member { margin-bottom: 2rem; }
+.team-member h3 { margin: 0; font-weight: normal; font-size: 1.25rem; }
+.team-member .role { color: #bda985; font-style: italic; margin: 0 0 0.4rem; }
+.screening { margin-bottom: 1.5rem; }
+.poster { max-width: 360px; width: 100%; border: 1px solid #3a3022; margin: 16px 0; }
+footer { text-align: center; padding: 28px 24px; font-size: 0.85rem; color: #8f7f63; border-top: 1px solid #3a3022; margin-top: 40px; }
