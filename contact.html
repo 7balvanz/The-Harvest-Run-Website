@@ -26,8 +26,15 @@
   <h3 class="thanks">Thank you for visiting.</h3>
   <p class="lede">For comments about the film or to get in touch, please drop us a line.</p>
 
-  <!-- Form submissions need a service to receive them. Set the action to that service's endpoint once it's chosen. -->
-  <form class="contact-form" action="#" method="post">
+  <p class="sent-note" id="sent-note" hidden>Thanks, your message has been sent.</p>
+  <script>
+    if (new URLSearchParams(location.search).get("sent") === "1") {
+      document.getElementById("sent-note").hidden = false;
+    }
+  </script>
+
+  <form class="contact-form" action="/send-contact" method="post">
+    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <label class="field">
       <span>Email <em>(required)</em></span>
       <input type="email" name="email" required>
