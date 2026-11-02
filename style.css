@@ -72,7 +72,27 @@ footer { text-align: center; padding: 28px 24px; font-size: 13px; color: #363636
 .team h3 span { display: block; }
 .team p { font-size: 20px; line-height: 1.7; color: #2b2b2b; margin: 0 0 1.4rem; }
 
-/* Inner pages (Contact) */
+/* Contact page */
+.contact { max-width: 700px; margin: 0 auto; padding: 100px 24px 100px; }
+.contact .thanks { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 52px; color: #1c1c1c; text-align: center; margin: 0 0 30px; text-transform: none; letter-spacing: 0; }
+.contact .lede { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 20px; letter-spacing: 0.2em; text-transform: uppercase; color: #1c1c1c; text-align: center; line-height: 1.6; margin: 0 0 80px; }
+.contact-form { display: flex; flex-direction: column; gap: 34px; }
+.contact-form .field, .contact-form fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.contact-form span, .contact-form legend { font-size: 20px; color: #1c1c1c; }
+.contact-form em { font-style: normal; color: #6b6b6b; font-size: 16px; }
+.contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.contact-form .row label { display: flex; flex-direction: column; gap: 10px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 14px; font-family: inherit; font-size: 18px; color: #1c1c1c; background: #fafafa; border: 1px solid #9a9a9a; border-radius: 0; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #1c1c1c; outline-offset: -1px; }
+.contact-form button { align-self: flex-start; padding: 18px 48px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; background: #1c1c1c; color: #ffffff; border: 3px solid #1c1c1c; cursor: pointer; }
+.contact-form button:hover { background: #ffffff; color: #1c1c1c; }
+@media (max-width: 720px) {
+  .contact .thanks { font-size: 36px; }
+  .contact .lede { font-size: 16px; }
+  .contact-form .row { grid-template-columns: 1fr; }
+}
+
+/* Inner pages */
 main { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
 .team-member { margin-bottom: 2rem; text-align: center; }
 .team-member h3 { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #1c1c1c; }

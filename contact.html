@@ -16,15 +16,47 @@
     <a href="/contact" class="active">Contact</a>
   </nav>
 </header>
-<main>
+
+<section class="page-band">
   <h2>Contact</h2>
-  <p>Thank you for visiting The Harvest Run. We would love to hear your comments about the film. For more information about <em>The Harvest Run</em>, please contact:</p>
-  <p><a href="mailto:steven@ropeswingproductions.com">steven@ropeswingproductions.com</a><br>
-  <a href="mailto:aaron@ropeswingproductions.com">aaron@ropeswingproductions.com</a></p>
-  <p>Follow along at <a href="https://facebook.com/theharvestrunfilm">facebook.com/theharvestrunfilm</a> and on social media at @theharvestrun.</p>
-</main>
+</section>
+
+<section class="contact">
+  <h3 class="thanks">Thank you for visiting.</h3>
+  <p class="lede">For comments about the film or to get in touch, please drop us a line.</p>
+
+  <!-- Form submissions need a service to receive them. Set the action to that service's endpoint once it's chosen. -->
+  <form class="contact-form" action="#" method="post">
+    <label class="field">
+      <span>Email <em>(required)</em></span>
+      <input type="email" name="email" required>
+    </label>
+
+    <fieldset class="field">
+      <legend>Name</legend>
+      <div class="row">
+        <label>
+          <span>First Name <em>(required)</em></span>
+          <input type="text" name="first_name" required>
+        </label>
+        <label>
+          <span>Last Name <em>(required)</em></span>
+          <input type="text" name="last_name" required>
+        </label>
+      </div>
+    </fieldset>
+
+    <label class="field">
+      <span>Message</span>
+      <textarea name="message" rows="6"></textarea>
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
 <footer>
-  &copy; 2016 Ropeswing Productions.
+  &copy; 2016 Ropeswing Productions. All rights reserved.
 </footer>
 </body>
 </html>
