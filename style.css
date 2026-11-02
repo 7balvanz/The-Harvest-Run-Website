@@ -18,22 +18,47 @@ nav a.active, nav a:hover { color: #1c1c1c; }
 .dots span { width: 12px; height: 12px; border: 2px solid #ffffff; border-radius: 50%; box-sizing: border-box; background: transparent; }
 .dots span.on { background: #ffffff; }
 
+h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 21px; letter-spacing: 0.4px; text-transform: uppercase; color: #1c1c1c; text-align: center; margin: 0 0 40px; }
+
+/* Story */
+.story { max-width: 1000px; margin: 0 auto; padding: 90px 24px 60px; text-align: center; }
+.story h2 { font-size: 36px; font-weight: 300; letter-spacing: 0; text-transform: none; margin-bottom: 40px; }
+.story p { font-size: 20px; line-height: 1.7; color: #2b2b2b; margin: 0 0 1.4rem; }
+
+/* Trailer band */
+.trailer-band { position: relative; background: #1c1c1c; height: 210px; display: flex; align-items: center; justify-content: center; margin-top: 40px; }
+.trailer-band h2 { color: #ffffff; margin: 0; font-size: 40px; font-weight: 300; letter-spacing: 0.2em; }
+.trailer-band .dots { right: 26px; }
+
+/* Trailer video */
+.trailer { position: relative; max-width: 1400px; aspect-ratio: 16 / 9; margin: 80px auto; overflow: hidden; background: #ddd; }
+.trailer img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.trailer iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 0; height: 0; border-left: 40px solid #ffffff; border-top: 24px solid transparent; border-bottom: 24px solid transparent; }
+
+/* Stills */
+.stills { max-width: 1400px; margin: 0 auto; padding: 60px 24px 100px; }
+.stills h2 { margin-bottom: 80px; font-size: 30px; font-weight: 300; letter-spacing: 0.02em; }
+.stills .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.stills .grid img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+
+footer { text-align: center; padding: 28px 24px; font-size: 13px; color: #363636; background: #f5f5f5; }
+
+/* Inner pages (Austin Film Festival, The Team, Contact) */
 main { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
-h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 21px; letter-spacing: 0.4px; text-transform: uppercase; color: #1c1c1c; text-align: center; margin: 48px 0 16px; }
-.tagline { font-size: 1.15rem; font-style: italic; text-align: center; margin: 0 0 1rem; }
-.credit { text-align: center; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 13px; color: #1c1c1c; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
-.gallery img { width: 100%; height: 140px; object-fit: cover; display: block; }
 .team-member { margin-bottom: 2rem; text-align: center; }
 .team-member h3 { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #1c1c1c; }
 .team-member .role { color: #6b6b6b; font-style: italic; margin: 0 0 0.4rem; }
 .screening { margin-bottom: 1.5rem; text-align: center; }
 .poster { display: block; max-width: 360px; width: 100%; margin: 24px auto; }
-footer { text-align: center; padding: 28px 24px; font-size: 13px; color: #363636; background: #f5f5f5; margin-top: 40px; }
 
+@media (max-width: 900px) {
+  .stills .grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+}
 @media (max-width: 720px) {
   header { padding: 20px 24px; }
   nav { gap: 18px; }
   nav a { font-size: 11px; letter-spacing: 0.12em; }
   header h1, header .site-title { font-size: 18px; }
+  .story p { font-size: 17px; }
 }
